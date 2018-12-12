@@ -72,7 +72,7 @@ Implementation
 --------------
 - Lexer works, it tokenizes all of the tokens currently included in the language
 - Parser works partially, can parse some but not all of the tokens from the
-    lexer into a tree. So far, the following are supported:
+lexer into a tree. So far, the following are supported:
         - Identifiers
         - Let keyword
         - Numbers
