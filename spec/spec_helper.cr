@@ -1,2 +1,3 @@
 require "spec"
-require "../src/mallard"
+require "../src/lexer"
+require "../src/parser.cr"
