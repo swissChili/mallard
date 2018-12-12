@@ -72,7 +72,6 @@ module Mallard
 			tree.push(Node.new(:UNDEFINED))
 			while indx < tokens.size
 				t  = tokens[indx]
-				puts "TOKEN : #{t.type} : #{t.value}"
 				# need to inc here because new indx is used later
 
 				indx += 1
@@ -86,11 +85,17 @@ module Mallard
 					if tree[-1].type == :UNDEFINED
 						tree[-1].type = t.value
 					else
-						tree[-1].push(t.value)
+						tree[-1].push("IDENTIFIER #{t.value}")
 					end
 
 				elsif t.type == :NUMBER
 					tree[-1].push(t.value)
+				elsif t.type == :STRING
+					if tree[-1].type != :UNDEFINED
+						tree[-1].push(t.value)
+					else
+						raise "Invalid String, type #{tree[-1].type}"
+					end
 				elsif t.type == :ASSIGNMENT
 					# matches =
 					if tree[-1].type == :LET || tree[-1].type == :ATOM

@@ -19,6 +19,7 @@ an interpreter. You can mess with that file to see how mallard parses things.
 
 Preview
 -------
+
 ::
     print "demo program"
     let name = getline "What is your name?"

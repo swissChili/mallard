@@ -1,5 +1,4 @@
-print e
-let a = 10
-let b = sub a 10 20
-
-print b
+print "hi"
+print a
+getline
+eat "some" "food"
