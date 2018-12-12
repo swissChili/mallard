@@ -2,6 +2,8 @@
 Mallard
 =======
 
+.. image:: https://api.travis-ci.org/swissChili/mallard.svg?branch=master
+
 Mallard is a high level, interpreted, functional scripting language written in
 Crystal. Mallard programs use the extension ``.mal``.
 
