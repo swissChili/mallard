@@ -7,7 +7,7 @@ describe Mallard do
     end
 
     it "parse" do
-        Mallard::Parrser.new.parse(Mallard::Lexer.new.tokenize("let foo ->\n    bar\nfoo qux"))
+        Mallard::Parser.new.parse(Mallard::Lexer.new.tokenize("let foo ->\n    bar\nfoo qux"))
     end
 
 end
