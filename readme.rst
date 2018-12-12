@@ -5,6 +5,18 @@ Mallard
 Mallard is a high level, interpreted, functional scripting language written in
 Crystal. Mallard programs use the extension ``.ma``.
 
+Building
+--------
+
+To build you will need an up-to-date version of the Crystal compiler, which
+means no building for windows.
+::
+    $ shards build
+    $ bin/mallard
+
+So far Mallard just reads ``demo.ma`` at runtime, so it's not really useful as
+an interpreter. You can mess with that file to see how mallard parses things.
+
 Preview
 -------
 ::
@@ -41,10 +53,26 @@ the name.
 
 The rest of the stuff will be documented once the language actually works.
 
+Standard Library
+~~~~~~~~~~~~~~~~
+
+My goal with this project is to implement the majority of the standard library
+in Mallard itself. It is of course necessary to define some functions at in the
+interpreter, such as IO operations, arithmetic, lambdas, and register
+manipulation, but the rest, such as string formating, parsing for various file
+types, and abstracted HTTP support will be hopefully implemented in Mallard.
+
 Implementation
 --------------
-Currently nothing works. Once I make stuff work I will add instructions for
-doing things with Mallard programs.
+* Lexer works, it tokenizes all of the tokens currently included in the language
+* Parser works partially, can parse some but not all of the tokens from the
+    lexer into a tree. So far, the following are supported:
+        * Identifiers
+        * Let keyword
+        * Numbers
+        * Strings
+        * Indented Lambdas
+    More will be implemented eventually when I have more time.
 
 License
 -------
