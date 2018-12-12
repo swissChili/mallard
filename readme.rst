@@ -74,11 +74,11 @@ Implementation
 - Parser works partially, can parse some but not all of the tokens from the
   lexer into a tree. So far, the following are supported:
 
-    - Identifiers
-    - Let keyword
-    - Numbers
-    - Strings
-    - Indented Lambdas
+  - Identifiers
+  - Let keyword
+  - Numbers
+  - Strings
+  - Indented Lambdas
 
   More will be implemented eventually when I have more time.
 
