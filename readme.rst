@@ -70,14 +70,14 @@ types, and abstracted HTTP support will be hopefully implemented in Mallard.
 
 Implementation
 --------------
-* Lexer works, it tokenizes all of the tokens currently included in the language
-* Parser works partially, can parse some but not all of the tokens from the
+- Lexer works, it tokenizes all of the tokens currently included in the language
+- Parser works partially, can parse some but not all of the tokens from the
     lexer into a tree. So far, the following are supported:
-        * Identifiers
-        * Let keyword
-        * Numbers
-        * Strings
-        * Indented Lambdas
+        - Identifiers
+        - Let keyword
+        - Numbers
+        - Strings
+        - Indented Lambdas
     More will be implemented eventually when I have more time.
 
 License
