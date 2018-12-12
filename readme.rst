@@ -3,14 +3,16 @@ Mallard
 =======
 
 Mallard is a high level, interpreted, functional scripting language written in
-Crystal. Mallard programs use the extension ``.ma``.
+Crystal. Mallard programs use the extension ``.mal``.
 
 Building
 --------
 
 To build you will need an up-to-date version of the Crystal compiler, which
 means no building for windows.
-.. code-block :: bash
+
+::
+
     $ shards build
     $ bin/mallard
 
@@ -20,7 +22,8 @@ an interpreter. You can mess with that file to see how mallard parses things.
 Preview
 -------
 
-.. code-block ::
+::
+
     print "demo program"
     let name = getline "What is your name?"
     match ->
@@ -77,7 +80,7 @@ Implementation
 
 License
 -------
-.. code-block :: bash
+::
 
     The MIT License (MIT)
 
