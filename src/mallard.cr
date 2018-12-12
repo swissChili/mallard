@@ -1,12 +1,12 @@
 require "./lexer.cr"
+require "./parser.cr"
+require "./debug.cr"
 
 # TODO: Write documentation for `Mallard`
 module Mallard
     VERSION = "0.1.0"
-    Lexer.new.tokenize(File.read("demo.mlrd")).each do |t|
+  	tokens = Mallard::Lexer.new.tokenize(File.read("demo.ma"))
+  	tree = Mallard::Parser.new.parse(tokens)
 
-    	puts t
-
-    end
-    # TODO: Put your code here
+    debugTree tree[0], tree[1]
 end
